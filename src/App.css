@@ -1,38 +1,75 @@
+*{
+  background: #000;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: #000;
   color: white;
+  height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.content{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 5% ;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#title{
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 3%;
+}
+input{
+  padding: 15px 150px;
+  border-radius:15px;
+  border-style: none;
+  background:rgb(255, 255, 255);
+}
+button{
+  padding: 2px 50px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: large ;
+  color: white;
+  background: linear-gradient(rgb(224, 59, 183) , rgb(68, 19, 114) , rgb(27, 16, 129));
+}
+.main{
+  display : flex ;
+  justify-content : center ;
+}
+.imagesoutput{
+  height: 90%;
+  width: 90%;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.imagesoutput img{
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 768px) { 
+  #title{
+    font-size:large;
+    font-weight: bolder;
+    padding: 3%;
   }
-  to {
-    transform: rotate(360deg);
+  input{
+    padding: 10px 30px;
+    border-radius:15px;
+    border-style: none;
+    background:rgb(255, 255, 255);
   }
-}
+  button{
+    padding: 2px 30px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: large ;
+    color: white;
+    background: linear-gradient(rgb(224, 59, 183) , rgb(68, 19, 114) , rgb(27, 16, 129));
+  }
+  .content{
+    position:flex ;
+    flex-wrap:wrap;
+  }
+ }
+
